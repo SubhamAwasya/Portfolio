@@ -1,0 +1,19 @@
+:root {
+  --cursorSize: 30px;
+  --bgColor: #2d2a44;
+  --bgColorDark: #1d1b34;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
+  /* cursor: none; */
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bgColorDark);
+}
