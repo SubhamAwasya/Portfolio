@@ -39,7 +39,6 @@ const DotCanvas = ({ children }) => {
     drawDots();
 
     canvasCon.addEventListener("mousemove", (event) => {
-      console.log(window.scrollY);
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       drawDots();
       let mouse = {
@@ -65,12 +64,6 @@ const DotCanvas = ({ children }) => {
       drawDots();
     });
     window.addEventListener("resize", () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      dots = [];
-      createDots();
-      drawDots();
-    });
-    window.addEventListener("fullscreenchange", (event) => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       dots = [];
       createDots();
